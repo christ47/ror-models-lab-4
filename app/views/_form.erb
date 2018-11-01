@@ -1,0 +1,19 @@
+<form class="" action="/<%=@chef.id %>" method="post">
+  <div class="container">
+    <div class="box1">
+      <label>Name:</label>
+      <label>Age:</label>
+
+    </div>
+    <div class="box2">
+      <input type="text" name="title" placeholder="Enter the chefs name" value="<%=@chef[:name]%>">
+      <input type="text" name="artist" placeholder="Enter the Chefs age" value="<%=@chef[:age]%>">
+    </div>
+  </div>
+  <div class="button">
+    <% if (@chef[:id] != "") %>
+    <input type="hidden" name="_method" value="put">
+    <% end %>
+    <input type="submit" value="Save post">
+  </div>
+</form>

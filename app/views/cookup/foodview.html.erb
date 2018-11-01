@@ -1,0 +1,16 @@
+<h1>Our Dishes</h1>
+ <!-- <p> %= @infochef %></p> -->
+<% @dish.each do |i| %>
+
+  <div class="main_content">
+
+    <h3>
+      <%= i.name %>
+    </h3>
+    <p>Ratings (out of 10) :
+      <%= i.rating %>
+      </p>
+      <p>Suitable for Vegetarians: <%= i.vegetarian %>
+
+  </div>
+<% end %>

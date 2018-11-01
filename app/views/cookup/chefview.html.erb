@@ -1,0 +1,15 @@
+<h1>Our Chefs</h1>
+ <!-- <p> %= @infochef %></p> -->
+<% @chef.each do |i| %>
+
+  <div class="main_content">
+
+    <h3>
+      <%= i.name %>
+    </h3>
+    <p>Age
+      <%= i.age %>
+
+
+  </div>
+<% end %>
